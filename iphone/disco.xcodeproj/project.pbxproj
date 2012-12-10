@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF5F9410166FD2900047CC8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F940F166FD2900047CC8C /* UIKit.framework */; };
+		DF5F9412166FD2900047CC8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F9411166FD2900047CC8C /* Foundation.framework */; };
+		DF5F9414166FD2900047CC8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F9413166FD2900047CC8C /* CoreGraphics.framework */; };
+		DF5F941A166FD2900047CC8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF5F9418166FD2900047CC8C /* InfoPlist.strings */; };
+		DF5F941C166FD2900047CC8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F941B166FD2900047CC8C /* main.m */; };
+		DF5F9420166FD2900047CC8C /* gtblAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F941F166FD2900047CC8C /* gtblAppDelegate.m */; };
+		DF5F9422166FD2900047CC8C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F9421166FD2900047CC8C /* Default.png */; };
+		DF5F9424166FD2900047CC8C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F9423166FD2900047CC8C /* Default@2x.png */; };
+		DF5F9426166FD2900047CC8C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F9425166FD2900047CC8C /* Default-568h@2x.png */; };
+		DF5F9429166FD2900047CC8C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5F9427166FD2900047CC8C /* MainStoryboard.storyboard */; };
+		DF5F942C166FD2900047CC8C /* gtblViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F942B166FD2900047CC8C /* gtblViewController.m */; };
+		DF5F9434166FD2910047CC8C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F9433166FD2910047CC8C /* SenTestingKit.framework */; };
+		DF5F9435166FD2910047CC8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F940F166FD2900047CC8C /* UIKit.framework */; };
+		DF5F9436166FD2910047CC8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F9411166FD2900047CC8C /* Foundation.framework */; };
+		DF5F943E166FD2910047CC8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF5F943C166FD2910047CC8C /* InfoPlist.strings */; };
+		DF5F9441166FD2910047CC8C /* discoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9440166FD2910047CC8C /* discoTests.m */; };
+		DF5F944E1671352F0047CC8C /* gtblStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F944D1671352F0047CC8C /* gtblStore.m */; };
+		DF5F9451167151730047CC8C /* gtblCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9450167151730047CC8C /* gtblCategory.m */; };
+		DF5F9454167152640047CC8C /* gtblProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9453167152640047CC8C /* gtblProduct.m */; };
+		DF5F9457167155790047CC8C /* gtblServiceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9456167155790047CC8C /* gtblServiceHandler.m */; };
+		DF5F945A167159310047CC8C /* gtblAppBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9459167159310047CC8C /* gtblAppBase.m */; };
+		DF5F945D16715FE10047CC8C /* gtblDataHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F945C16715FE10047CC8C /* gtblDataHelpers.m */; };
+		DFD6B63B1671890A002B059F /* gtblStoreSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B63A1671890A002B059F /* gtblStoreSelectorViewController.m */; };
+		DFD6B64516718AE5002B059F /* gtblProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B64416718AE4002B059F /* gtblProductListViewController.m */; };
+		DFD6B64816718B1A002B059F /* gtblProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B64716718B1A002B059F /* gtblProductDetailViewController.m */; };
+		DFD6B64B16718BB5002B059F /* gtblCategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B64A16718BB5002B059F /* gtblCategoryListViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF5F9437166FD2910047CC8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF5F9402166FD2900047CC8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF5F940A166FD2900047CC8C;
+			remoteInfo = disco;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF5F940B166FD2900047CC8C /* disco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = disco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5F940F166FD2900047CC8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF5F9411166FD2900047CC8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF5F9413166FD2900047CC8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF5F9417166FD2900047CC8C /* disco-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "disco-Info.plist"; sourceTree = "<group>"; };
+		DF5F9419166FD2900047CC8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF5F941B166FD2900047CC8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF5F941D166FD2900047CC8C /* disco-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "disco-Prefix.pch"; sourceTree = "<group>"; };
+		DF5F941E166FD2900047CC8C /* gtblAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtblAppDelegate.h; sourceTree = "<group>"; };
+		DF5F941F166FD2900047CC8C /* gtblAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gtblAppDelegate.m; sourceTree = "<group>"; };
+		DF5F9421166FD2900047CC8C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DF5F9423166FD2900047CC8C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DF5F9425166FD2900047CC8C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DF5F9428166FD2900047CC8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DF5F942A166FD2900047CC8C /* gtblViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtblViewController.h; sourceTree = "<group>"; };
+		DF5F942B166FD2900047CC8C /* gtblViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gtblViewController.m; sourceTree = "<group>"; };
+		DF5F9432166FD2910047CC8C /* discoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = discoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5F9433166FD2910047CC8C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DF5F943B166FD2910047CC8C /* discoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "discoTests-Info.plist"; sourceTree = "<group>"; };
+		DF5F943D166FD2910047CC8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF5F943F166FD2910047CC8C /* discoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = discoTests.h; sourceTree = "<group>"; };
+		DF5F9440166FD2910047CC8C /* discoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = discoTests.m; sourceTree = "<group>"; };
+		DF5F944C1671352F0047CC8C /* gtblStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = gtblStore.h; path = Classes/gtblStore.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DF5F944D1671352F0047CC8C /* gtblStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblStore.m; path = Classes/gtblStore.m; sourceTree = "<group>"; };
+		DF5F944F167151730047CC8C /* gtblCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtblCategory.h; path = Classes/gtblCategory.h; sourceTree = "<group>"; };
+		DF5F9450167151730047CC8C /* gtblCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblCategory.m; path = Classes/gtblCategory.m; sourceTree = "<group>"; };
+		DF5F9452167152640047CC8C /* gtblProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtblProduct.h; path = Classes/gtblProduct.h; sourceTree = "<group>"; };
+		DF5F9453167152640047CC8C /* gtblProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblProduct.m; path = Classes/gtblProduct.m; sourceTree = "<group>"; };
+		DF5F9455167155790047CC8C /* gtblServiceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtblServiceHandler.h; path = Classes/gtblServiceHandler.h; sourceTree = "<group>"; };
+		DF5F9456167155790047CC8C /* gtblServiceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblServiceHandler.m; path = Classes/gtblServiceHandler.m; sourceTree = "<group>"; };
+		DF5F9458167159310047CC8C /* gtblAppBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtblAppBase.h; path = Classes/gtblAppBase.h; sourceTree = "<group>"; };
+		DF5F9459167159310047CC8C /* gtblAppBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblAppBase.m; path = Classes/gtblAppBase.m; sourceTree = "<group>"; };
+		DF5F945B16715FE10047CC8C /* gtblDataHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtblDataHelpers.h; path = Classes/gtblDataHelpers.h; sourceTree = "<group>"; };
+		DF5F945C16715FE10047CC8C /* gtblDataHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblDataHelpers.m; path = Classes/gtblDataHelpers.m; sourceTree = "<group>"; };
+		DFD6B6391671890A002B059F /* gtblStoreSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtblStoreSelectorViewController.h; sourceTree = "<group>"; };
+		DFD6B63A1671890A002B059F /* gtblStoreSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gtblStoreSelectorViewController.m; sourceTree = "<group>"; };
+		DFD6B64316718AE4002B059F /* gtblProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtblProductListViewController.h; sourceTree = "<group>"; };
+		DFD6B64416718AE4002B059F /* gtblProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gtblProductListViewController.m; sourceTree = "<group>"; };
+		DFD6B64616718B1A002B059F /* gtblProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtblProductDetailViewController.h; sourceTree = "<group>"; };
+		DFD6B64716718B1A002B059F /* gtblProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gtblProductDetailViewController.m; sourceTree = "<group>"; };
+		DFD6B64916718BB5002B059F /* gtblCategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtblCategoryListViewController.h; sourceTree = "<group>"; };
+		DFD6B64A16718BB5002B059F /* gtblCategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gtblCategoryListViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF5F9408166FD2900047CC8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5F9410166FD2900047CC8C /* UIKit.framework in Frameworks */,
+				DF5F9412166FD2900047CC8C /* Foundation.framework in Frameworks */,
+				DF5F9414166FD2900047CC8C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5F942E166FD2910047CC8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5F9434166FD2910047CC8C /* SenTestingKit.framework in Frameworks */,
+				DF5F9435166FD2910047CC8C /* UIKit.framework in Frameworks */,
+				DF5F9436166FD2910047CC8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF5F9400166FD2900047CC8C = {
+			isa = PBXGroup;
+			children = (
+				DF5F9415166FD2900047CC8C /* disco */,
+				DF5F9439166FD2910047CC8C /* discoTests */,
+				DF5F940E166FD2900047CC8C /* Frameworks */,
+				DF5F940C166FD2900047CC8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF5F940C166FD2900047CC8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF5F940B166FD2900047CC8C /* disco.app */,
+				DF5F9432166FD2910047CC8C /* discoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF5F940E166FD2900047CC8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF5F940F166FD2900047CC8C /* UIKit.framework */,
+				DF5F9411166FD2900047CC8C /* Foundation.framework */,
+				DF5F9413166FD2900047CC8C /* CoreGraphics.framework */,
+				DF5F9433166FD2910047CC8C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF5F9415166FD2900047CC8C /* disco */ = {
+			isa = PBXGroup;
+			children = (
+				DF5F944B167134C20047CC8C /* Classes */,
+				DF5F941E166FD2900047CC8C /* gtblAppDelegate.h */,
+				DF5F941F166FD2900047CC8C /* gtblAppDelegate.m */,
+				DFD6B64916718BB5002B059F /* gtblCategoryListViewController.h */,
+				DFD6B64A16718BB5002B059F /* gtblCategoryListViewController.m */,
+				DFD6B64616718B1A002B059F /* gtblProductDetailViewController.h */,
+				DFD6B64716718B1A002B059F /* gtblProductDetailViewController.m */,
+				DFD6B64316718AE4002B059F /* gtblProductListViewController.h */,
+				DFD6B64416718AE4002B059F /* gtblProductListViewController.m */,
+				DFD6B6391671890A002B059F /* gtblStoreSelectorViewController.h */,
+				DFD6B63A1671890A002B059F /* gtblStoreSelectorViewController.m */,
+				DF5F942A166FD2900047CC8C /* gtblViewController.h */,
+				DF5F942B166FD2900047CC8C /* gtblViewController.m */,
+				DF5F9427166FD2900047CC8C /* MainStoryboard.storyboard */,
+				DF5F9416166FD2900047CC8C /* Supporting Files */,
+			);
+			path = disco;
+			sourceTree = "<group>";
+		};
+		DF5F9416166FD2900047CC8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF5F9417166FD2900047CC8C /* disco-Info.plist */,
+				DF5F9418166FD2900047CC8C /* InfoPlist.strings */,
+				DF5F941B166FD2900047CC8C /* main.m */,
+				DF5F941D166FD2900047CC8C /* disco-Prefix.pch */,
+				DF5F9421166FD2900047CC8C /* Default.png */,
+				DF5F9423166FD2900047CC8C /* Default@2x.png */,
+				DF5F9425166FD2900047CC8C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF5F9439166FD2910047CC8C /* discoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF5F943F166FD2910047CC8C /* discoTests.h */,
+				DF5F9440166FD2910047CC8C /* discoTests.m */,
+				DF5F943A166FD2910047CC8C /* Supporting Files */,
+			);
+			path = discoTests;
+			sourceTree = "<group>";
+		};
+		DF5F943A166FD2910047CC8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF5F943B166FD2910047CC8C /* discoTests-Info.plist */,
+				DF5F943C166FD2910047CC8C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF5F944B167134C20047CC8C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DF5F944C1671352F0047CC8C /* gtblStore.h */,
+				DF5F944D1671352F0047CC8C /* gtblStore.m */,
+				DF5F944F167151730047CC8C /* gtblCategory.h */,
+				DF5F9450167151730047CC8C /* gtblCategory.m */,
+				DF5F9452167152640047CC8C /* gtblProduct.h */,
+				DF5F9453167152640047CC8C /* gtblProduct.m */,
+				DF5F9455167155790047CC8C /* gtblServiceHandler.h */,
+				DF5F9456167155790047CC8C /* gtblServiceHandler.m */,
+				DF5F9458167159310047CC8C /* gtblAppBase.h */,
+				DF5F9459167159310047CC8C /* gtblAppBase.m */,
+				DF5F945B16715FE10047CC8C /* gtblDataHelpers.h */,
+				DF5F945C16715FE10047CC8C /* gtblDataHelpers.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF5F940A166FD2900047CC8C /* disco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF5F9444166FD2910047CC8C /* Build configuration list for PBXNativeTarget "disco" */;
+			buildPhases = (
+				DF5F9407166FD2900047CC8C /* Sources */,
+				DF5F9408166FD2900047CC8C /* Frameworks */,
+				DF5F9409166FD2900047CC8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = disco;
+			productName = disco;
+			productReference = DF5F940B166FD2900047CC8C /* disco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF5F9431166FD2910047CC8C /* discoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF5F9447166FD2910047CC8C /* Build configuration list for PBXNativeTarget "discoTests" */;
+			buildPhases = (
+				DF5F942D166FD2910047CC8C /* Sources */,
+				DF5F942E166FD2910047CC8C /* Frameworks */,
+				DF5F942F166FD2910047CC8C /* Resources */,
+				DF5F9430166FD2910047CC8C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF5F9438166FD2910047CC8C /* PBXTargetDependency */,
+			);
+			name = discoTests;
+			productName = discoTests;
+			productReference = DF5F9432166FD2910047CC8C /* discoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF5F9402166FD2900047CC8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = gtbl;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Ludo Goarin";
+			};
+			buildConfigurationList = DF5F9405166FD2900047CC8C /* Build configuration list for PBXProject "disco" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF5F9400166FD2900047CC8C;
+			productRefGroup = DF5F940C166FD2900047CC8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF5F940A166FD2900047CC8C /* disco */,
+				DF5F9431166FD2910047CC8C /* discoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF5F9409166FD2900047CC8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5F941A166FD2900047CC8C /* InfoPlist.strings in Resources */,
+				DF5F9422166FD2900047CC8C /* Default.png in Resources */,
+				DF5F9424166FD2900047CC8C /* Default@2x.png in Resources */,
+				DF5F9426166FD2900047CC8C /* Default-568h@2x.png in Resources */,
+				DF5F9429166FD2900047CC8C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5F942F166FD2910047CC8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5F943E166FD2910047CC8C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF5F9430166FD2910047CC8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF5F9407166FD2900047CC8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5F941C166FD2900047CC8C /* main.m in Sources */,
+				DF5F9420166FD2900047CC8C /* gtblAppDelegate.m in Sources */,
+				DF5F942C166FD2900047CC8C /* gtblViewController.m in Sources */,
+				DF5F944E1671352F0047CC8C /* gtblStore.m in Sources */,
+				DF5F9451167151730047CC8C /* gtblCategory.m in Sources */,
+				DF5F9454167152640047CC8C /* gtblProduct.m in Sources */,
+				DF5F9457167155790047CC8C /* gtblServiceHandler.m in Sources */,
+				DF5F945A167159310047CC8C /* gtblAppBase.m in Sources */,
+				DF5F945D16715FE10047CC8C /* gtblDataHelpers.m in Sources */,
+				DFD6B63B1671890A002B059F /* gtblStoreSelectorViewController.m in Sources */,
+				DFD6B64516718AE5002B059F /* gtblProductListViewController.m in Sources */,
+				DFD6B64816718B1A002B059F /* gtblProductDetailViewController.m in Sources */,
+				DFD6B64B16718BB5002B059F /* gtblCategoryListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5F942D166FD2910047CC8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5F9441166FD2910047CC8C /* discoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF5F9438166FD2910047CC8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF5F940A166FD2900047CC8C /* disco */;
+			targetProxy = DF5F9437166FD2910047CC8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF5F9418166FD2900047CC8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF5F9419166FD2900047CC8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DF5F9427166FD2900047CC8C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF5F9428166FD2900047CC8C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		DF5F943C166FD2910047CC8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF5F943D166FD2910047CC8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF5F9442166FD2910047CC8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF5F9443166FD2910047CC8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF5F9445166FD2910047CC8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "disco/disco-Prefix.pch";
+				INFOPLIST_FILE = "disco/disco-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF5F9446166FD2910047CC8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "disco/disco-Prefix.pch";
+				INFOPLIST_FILE = "disco/disco-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DF5F9448166FD2910047CC8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/disco.app/disco";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "disco/disco-Prefix.pch";
+				INFOPLIST_FILE = "discoTests/discoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DF5F9449166FD2910047CC8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/disco.app/disco";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "disco/disco-Prefix.pch";
+				INFOPLIST_FILE = "discoTests/discoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF5F9405166FD2900047CC8C /* Build configuration list for PBXProject "disco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF5F9442166FD2910047CC8C /* Debug */,
+				DF5F9443166FD2910047CC8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF5F9444166FD2910047CC8C /* Build configuration list for PBXNativeTarget "disco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF5F9445166FD2910047CC8C /* Debug */,
+				DF5F9446166FD2910047CC8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF5F9447166FD2910047CC8C /* Build configuration list for PBXNativeTarget "discoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF5F9448166FD2910047CC8C /* Debug */,
+				DF5F9449166FD2910047CC8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF5F9402166FD2900047CC8C /* Project object */;
+}
