@@ -14,6 +14,6 @@
 @property NSString *Title;
 @property NSNumber *CategoryId;
 @property NSString *ImageUrl;
-@property NSMutableArray *Products;
+@property NSArray *Products;
 
 @end

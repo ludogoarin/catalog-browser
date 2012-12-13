@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface gtblStoreSelectorViewController : UIViewController
+@interface gtblStoreSelectorViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *storeListTable;
 
 @end

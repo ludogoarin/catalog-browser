@@ -8,14 +8,19 @@
 
 #import <Foundation/Foundation.h>
 #import "gtblStore.h"
+#import "gtblCategory.h"
+#import "gtblProduct.h"
 
+extern NSMutableArray *_cachedStores;
+extern NSString *_currentApiKey;
+extern gtblStore *_currentStore;
+extern gtblCategory *_currentCategory;
+extern gtblProduct *_currentProduct;
+extern NSNumber *_currentCategoryId;
 
-@interface gtblAppBase : NSObject
+@interface gtblAppBase
 
-extern gtblAppBase *GetableApp;
-
-@property NSMutableArray *CachedStores;
-@property NSString *CurrentApiKey;
-@property gtblStore *CurrentStore;
+-(gtblStore*)getStoreFromCache:(NSString*) apiKey;
+-(NSArray*)getProductListByCategoryFromCache:(NSString*) apiKey categoryId:(NSNumber*) categoryId;
 
 @end

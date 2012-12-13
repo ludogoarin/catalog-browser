@@ -37,7 +37,7 @@
 @property NSString *Country;
 @property NSString *WidgetAPIKey;
 @property Boolean IsPayPalPrimaryGateway;
-@property NSMutableArray *Categories;
+@property NSArray *Categories;
 //@property BusinessExtendedProperties ExtendedProperties;
 
 @end

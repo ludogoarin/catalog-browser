@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF199A001676AB5400C0BBEE /* gtblNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1999FF1676AB5400C0BBEE /* gtblNavigationController.m */; };
+		DF199A0D1676BDB700C0BBEE /* User-Administrator-Blue-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF199A0B1676BDB700C0BBEE /* User-Administrator-Blue-icon.png */; };
+		DF199A0E1676BDB700C0BBEE /* User-Executive-Green-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF199A0C1676BDB700C0BBEE /* User-Executive-Green-icon.png */; };
+		DF199A111676C33C00C0BBEE /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF199A101676C33C00C0BBEE /* CollectionViewCell.m */; };
+		DF199A171676C7B100C0BBEE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF199A161676C7B100C0BBEE /* SystemConfiguration.framework */; };
+		DF199A391676C8A500C0BBEE /* URLImageCached.m in Sources */ = {isa = PBXBuildFile; fileRef = DF199A361676C8A500C0BBEE /* URLImageCached.m */; };
+		DF199A3A1676C8A500C0BBEE /* URLImageLoadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF199A381676C8A500C0BBEE /* URLImageLoadOperation.m */; };
+		DF199A711678137F00C0BBEE /* gtblStoreListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DF199A701678137E00C0BBEE /* gtblStoreListItem.m */; };
+		DF199A7816781C0500C0BBEE /* gtblStoreListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF199A7716781C0400C0BBEE /* gtblStoreListViewController.m */; };
 		DF5F9410166FD2900047CC8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F940F166FD2900047CC8C /* UIKit.framework */; };
 		DF5F9412166FD2900047CC8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F9411166FD2900047CC8C /* Foundation.framework */; };
 		DF5F9414166FD2900047CC8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F9413166FD2900047CC8C /* CoreGraphics.framework */; };
@@ -46,6 +55,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF1999FE1676AB5400C0BBEE /* gtblNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtblNavigationController.h; sourceTree = "<group>"; };
+		DF1999FF1676AB5400C0BBEE /* gtblNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gtblNavigationController.m; sourceTree = "<group>"; };
+		DF199A0B1676BDB700C0BBEE /* User-Administrator-Blue-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User-Administrator-Blue-icon.png"; sourceTree = "<group>"; };
+		DF199A0C1676BDB700C0BBEE /* User-Executive-Green-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User-Executive-Green-icon.png"; sourceTree = "<group>"; };
+		DF199A0F1676C33C00C0BBEE /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		DF199A101676C33C00C0BBEE /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		DF199A161676C7B100C0BBEE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DF199A341676C8A500C0BBEE /* URLImageCacheConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLImageCacheConstants.h; sourceTree = "<group>"; };
+		DF199A351676C8A500C0BBEE /* URLImageCached.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLImageCached.h; sourceTree = "<group>"; };
+		DF199A361676C8A500C0BBEE /* URLImageCached.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLImageCached.m; sourceTree = "<group>"; };
+		DF199A371676C8A500C0BBEE /* URLImageLoadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLImageLoadOperation.h; sourceTree = "<group>"; };
+		DF199A381676C8A500C0BBEE /* URLImageLoadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLImageLoadOperation.m; sourceTree = "<group>"; };
+		DF199A6F1678137E00C0BBEE /* gtblStoreListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtblStoreListItem.h; path = Classes/gtblStoreListItem.h; sourceTree = "<group>"; };
+		DF199A701678137E00C0BBEE /* gtblStoreListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblStoreListItem.m; path = Classes/gtblStoreListItem.m; sourceTree = "<group>"; };
+		DF199A7616781C0400C0BBEE /* gtblStoreListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtblStoreListViewController.h; sourceTree = "<group>"; };
+		DF199A7716781C0400C0BBEE /* gtblStoreListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gtblStoreListViewController.m; sourceTree = "<group>"; };
 		DF5F940B166FD2900047CC8C /* disco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = disco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5F940F166FD2900047CC8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF5F9411166FD2900047CC8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF199A171676C7B100C0BBEE /* SystemConfiguration.framework in Frameworks */,
 				DF5F9410166FD2900047CC8C /* UIKit.framework in Frameworks */,
 				DF5F9412166FD2900047CC8C /* Foundation.framework in Frameworks */,
 				DF5F9414166FD2900047CC8C /* CoreGraphics.framework in Frameworks */,
@@ -114,9 +140,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF199A331676C8A500C0BBEE /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DF199A341676C8A500C0BBEE /* URLImageCacheConstants.h */,
+				DF199A351676C8A500C0BBEE /* URLImageCached.h */,
+				DF199A361676C8A500C0BBEE /* URLImageCached.m */,
+				DF199A371676C8A500C0BBEE /* URLImageLoadOperation.h */,
+				DF199A381676C8A500C0BBEE /* URLImageLoadOperation.m */,
+			);
+			name = utilities;
+			path = Classes/utilities;
+			sourceTree = "<group>";
+		};
 		DF5F9400166FD2900047CC8C = {
 			isa = PBXGroup;
 			children = (
+				DF199A161676C7B100C0BBEE /* SystemConfiguration.framework */,
 				DF5F9415166FD2900047CC8C /* disco */,
 				DF5F9439166FD2910047CC8C /* discoTests */,
 				DF5F940E166FD2900047CC8C /* Frameworks */,
@@ -147,11 +187,15 @@
 		DF5F9415166FD2900047CC8C /* disco */ = {
 			isa = PBXGroup;
 			children = (
+				DF199A0F1676C33C00C0BBEE /* CollectionViewCell.h */,
+				DF199A101676C33C00C0BBEE /* CollectionViewCell.m */,
 				DF5F944B167134C20047CC8C /* Classes */,
 				DF5F941E166FD2900047CC8C /* gtblAppDelegate.h */,
 				DF5F941F166FD2900047CC8C /* gtblAppDelegate.m */,
 				DFD6B64916718BB5002B059F /* gtblCategoryListViewController.h */,
 				DFD6B64A16718BB5002B059F /* gtblCategoryListViewController.m */,
+				DF1999FE1676AB5400C0BBEE /* gtblNavigationController.h */,
+				DF1999FF1676AB5400C0BBEE /* gtblNavigationController.m */,
 				DFD6B64616718B1A002B059F /* gtblProductDetailViewController.h */,
 				DFD6B64716718B1A002B059F /* gtblProductDetailViewController.m */,
 				DFD6B64316718AE4002B059F /* gtblProductListViewController.h */,
@@ -162,6 +206,10 @@
 				DF5F942B166FD2900047CC8C /* gtblViewController.m */,
 				DF5F9427166FD2900047CC8C /* MainStoryboard.storyboard */,
 				DF5F9416166FD2900047CC8C /* Supporting Files */,
+				DF199A0B1676BDB700C0BBEE /* User-Administrator-Blue-icon.png */,
+				DF199A0C1676BDB700C0BBEE /* User-Executive-Green-icon.png */,
+				DF199A7616781C0400C0BBEE /* gtblStoreListViewController.h */,
+				DF199A7716781C0400C0BBEE /* gtblStoreListViewController.m */,
 			);
 			path = disco;
 			sourceTree = "<group>";
@@ -202,18 +250,21 @@
 		DF5F944B167134C20047CC8C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DF5F944C1671352F0047CC8C /* gtblStore.h */,
-				DF5F944D1671352F0047CC8C /* gtblStore.m */,
+				DF5F9458167159310047CC8C /* gtblAppBase.h */,
+				DF5F9459167159310047CC8C /* gtblAppBase.m */,
 				DF5F944F167151730047CC8C /* gtblCategory.h */,
 				DF5F9450167151730047CC8C /* gtblCategory.m */,
+				DF5F945B16715FE10047CC8C /* gtblDataHelpers.h */,
+				DF5F945C16715FE10047CC8C /* gtblDataHelpers.m */,
 				DF5F9452167152640047CC8C /* gtblProduct.h */,
 				DF5F9453167152640047CC8C /* gtblProduct.m */,
 				DF5F9455167155790047CC8C /* gtblServiceHandler.h */,
 				DF5F9456167155790047CC8C /* gtblServiceHandler.m */,
-				DF5F9458167159310047CC8C /* gtblAppBase.h */,
-				DF5F9459167159310047CC8C /* gtblAppBase.m */,
-				DF5F945B16715FE10047CC8C /* gtblDataHelpers.h */,
-				DF5F945C16715FE10047CC8C /* gtblDataHelpers.m */,
+				DF5F944C1671352F0047CC8C /* gtblStore.h */,
+				DF5F944D1671352F0047CC8C /* gtblStore.m */,
+				DF199A6F1678137E00C0BBEE /* gtblStoreListItem.h */,
+				DF199A701678137E00C0BBEE /* gtblStoreListItem.m */,
+				DF199A331676C8A500C0BBEE /* utilities */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -295,6 +346,8 @@
 				DF5F9424166FD2900047CC8C /* Default@2x.png in Resources */,
 				DF5F9426166FD2900047CC8C /* Default-568h@2x.png in Resources */,
 				DF5F9429166FD2900047CC8C /* MainStoryboard.storyboard in Resources */,
+				DF199A0D1676BDB700C0BBEE /* User-Administrator-Blue-icon.png in Resources */,
+				DF199A0E1676BDB700C0BBEE /* User-Executive-Green-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +395,12 @@
 				DFD6B64516718AE5002B059F /* gtblProductListViewController.m in Sources */,
 				DFD6B64816718B1A002B059F /* gtblProductDetailViewController.m in Sources */,
 				DFD6B64B16718BB5002B059F /* gtblCategoryListViewController.m in Sources */,
+				DF199A001676AB5400C0BBEE /* gtblNavigationController.m in Sources */,
+				DF199A111676C33C00C0BBEE /* CollectionViewCell.m in Sources */,
+				DF199A391676C8A500C0BBEE /* URLImageCached.m in Sources */,
+				DF199A3A1676C8A500C0BBEE /* URLImageLoadOperation.m in Sources */,
+				DF199A711678137F00C0BBEE /* gtblStoreListItem.m in Sources */,
+				DF199A7816781C0500C0BBEE /* gtblStoreListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

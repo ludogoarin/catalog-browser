@@ -19,5 +19,6 @@
 +(gtblProduct *)parseJsonToProduct:(NSData *) data;
 +(NSArray *) parseJsonToCategories:(NSData *) data;
 +(NSArray *) parseJsonToProducts:(NSData *) data;
++(NSArray *) parseRawJsonToProducts:(NSData *)data;
 
 @end

@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "gtblCategory.h"
+#import "gtblProduct.h"
 
 @interface gtblProductListViewController : UITableViewController
+{
+    int noOfItemsInSection;
+    int noOfItems;
+}
+
+@property gtblCategory *category;
 
 @end

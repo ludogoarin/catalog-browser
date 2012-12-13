@@ -23,10 +23,10 @@
     NSString *svcMethod = [NSString stringWithFormat:@"getBusinessSettings?widgetApiKey=%@", apiKey];
     NSURL *svcCallUrl = [NSURL URLWithString: [NSString stringWithFormat:@"%@%@", gtblSvcUrl, svcMethod]];
     
-    dispatch_async(gtblQueue, ^{
+    dispatch_sync(gtblQueue, ^{
         
         // get data from API
-        NSData* data = [NSData dataWithContentsOfURL:svcCallUrl];
+        NSData *data = [NSData dataWithContentsOfURL:svcCallUrl];
         
         gtblStore *store = [gtblDataHelpers parseJsonToStore:data];
                
@@ -56,8 +56,24 @@
     }];
 }
 
-+ (void) getStoreCategoryProducts:(NSString*)apiKey categoryId:(NSInteger)categoryId callBackDelegate:(id) callBackDelegate callBackSelector:(SEL) callBackSelector
++ (void) getStoreCategoryProducts:(NSString*)apiKey categoryId:(NSNumber*)categoryId callBackDelegate:(id) callBackDelegate callBackSelector:(SEL) callBackSelector
 {
+    int pageIndex = 0;
+    int pageSize = 20;
+    NSString *svcMethod = [NSString stringWithFormat:@"getProductsByCategoryId?widgetApiKey=%@&categoryId=%@&pageIndex=%d&pageSize=%d", apiKey, categoryId, pageIndex, pageSize];
+    NSURL *svcCallUrl = [NSURL URLWithString: [NSString stringWithFormat:@"%@%@", gtblSvcUrl, svcMethod]];
+    
+    dispatch_sync(gtblQueue, ^{
+        
+        // get data from API
+        NSData *data = [NSData dataWithContentsOfURL:svcCallUrl];
+        
+        NSArray *products = [gtblDataHelpers parseRawJsonToProducts:data];
+        
+        [callBackDelegate performSelector:callBackSelector
+                               withObject:products];
+        
+    });
 
 }
 

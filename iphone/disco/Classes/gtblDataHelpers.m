@@ -57,6 +57,7 @@
     NSArray *parsedCategories = [self parseJsonToCategories:jsCategories];
     
     NSLog(@"jsCategories: %@", parsedCategories);
+    store.Categories = parsedCategories;
     
     return store;
 }
@@ -116,6 +117,19 @@
     
     return categories;
 }
+
++(NSArray *) parseRawJsonToProducts:(NSData *)data
+{
+    // parse json data
+    NSData *jsonData = [self cleanupJSON:data];
+    NSError* error;
+    NSDictionary* json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
+
+    NSData *jsItems = [json objectForKey:@"Products"];
+
+    return [self parseJsonToProducts:jsItems];
+}
+
 
 +(NSMutableArray *) parseJsonToProducts:(NSArray *)jsProducts
 {
