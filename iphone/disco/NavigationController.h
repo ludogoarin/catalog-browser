@@ -1,5 +1,5 @@
 //
-//  gtblNavigationController.h
+//  GTBLNavigationController.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/10/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface gtblNavigationController : UINavigationController
+@interface NavigationController : UINavigationController
 
 @end

@@ -1,26 +1,26 @@
 //
-//  gtblStoreSelectorViewController.m
+//  GTBLStoreSelectorViewController.m
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
 //  Copyright (c) 2012 Ludo Goarin. All rights reserved.
 //
 
-#import "gtblStoreSelectorViewController.h"
-#import "gtblServiceHandler.h"
-#import "gtblCategoryListViewController.h"
-#import "gtblStore.h"
-#import "gtblStoreListItem.h"
-#import "gtblAppBase.h"
+#import "StoreSelectorViewController.h"
+#import "CategoryListViewController.h"
+#import "GTBLServiceHandler.h"
+#import "GTBLStore.h"
+#import "GTBLStoreListItem.h"
+#import "GTBLAppBase.h"
 
-@interface gtblStoreSelectorViewController ()
+@interface StoreSelectorViewController ()
 {
     NSMutableArray *_objects;
 }
 @end
 
 
-@implementation gtblStoreSelectorViewController
+@implementation StoreSelectorViewController
 
 @synthesize storeListTable;
 
@@ -43,26 +43,25 @@
     _objects = [[NSMutableArray alloc] init];
 
     // add SF Party
-    gtblStoreListItem *item1 = [[gtblStoreListItem alloc] init];
+    GTBLStoreListItem *item1 = [[GTBLStoreListItem alloc] init];
     item1.ApiKey = @"7e8bec75-9829-4088-89b2-88d02f7d901c";
     item1.BusinessName = @"SF Party";
     [_objects addObject:item1];
 
     // add Getable Test Store
-    gtblStoreListItem *item2 = [[gtblStoreListItem alloc] init];
+    GTBLStoreListItem *item2 = [[GTBLStoreListItem alloc] init];
     item2.ApiKey = @"3c686493-19ba-4203-aace-d4eced6495dc";
     item2.BusinessName = @"Getable Demos";
     [_objects addObject:item2];
     
     // add AAA Rents
-    gtblStoreListItem *item3 = [[gtblStoreListItem alloc] init];
+    GTBLStoreListItem *item3 = [[GTBLStoreListItem alloc] init];
     item3.ApiKey = @"aab754e0-53dc-457d-86c7-498bf02c2609";
     item3.BusinessName = @"AAA Rentals";
-    [_objects addObject:item3];
-    
+    [_objects addObject:item3];    
     
     // add AAA Rents
-    gtblStoreListItem *item4 = [[gtblStoreListItem alloc] init];
+    GTBLStoreListItem *item4 = [[GTBLStoreListItem alloc] init];
     item4.ApiKey = @"82f591bd-D7e1-42f5-8e0e-D96a5f2e1e7f";
     item4.BusinessName = @"Blazing Saddles";
     [_objects addObject:item4];
@@ -93,7 +92,7 @@
 {
     static NSString *CellIdentifier = @"storeItem";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    gtblStoreListItem *cellObject = [_objects objectAtIndex:indexPath.section + indexPath.row];
+    GTBLStoreListItem *cellObject = [_objects objectAtIndex:indexPath.section + indexPath.row];
     
     cell.textLabel.text = cellObject.BusinessName;
     // Configure the cell...
@@ -107,7 +106,7 @@
     NSLog(@"selected changed");
     // Navigation logic may go here. Create and push another view controller.
     
-     //gtblCategoryListViewController *storeViewController = [[gtblCategoryListViewController alloc] init];
+     //GTBLCategoryListViewController *storeViewController = [[GTBLCategoryListViewController alloc] init];
      // ...
      // Pass the selected object to the new view controller.
      //[self.navigationController pushViewController:storeViewController animated:YES];
@@ -128,7 +127,7 @@
         //UITableViewCell *selectedCell = [self.storeListTable cellForRowAtIndexPath:selectedIndexPath];
                 
         int index = selectedRow;
-        gtblStoreListItem *selectedStoreItem = _objects[index];
+        GTBLStoreListItem *selectedStoreItem = _objects[index];
         NSString *storeName = selectedStoreItem.BusinessName;
         NSLog(@"selected: %@", storeName);
         _currentApiKey = selectedStoreItem.ApiKey;

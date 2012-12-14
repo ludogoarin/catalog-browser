@@ -1,5 +1,5 @@
 //
-//  gtblAppBase.h
+//  GTBLAppBase.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
@@ -7,20 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "gtblStore.h"
-#import "gtblCategory.h"
-#import "gtblProduct.h"
+#import "GTBLStore.h"
+#import "GTBLCategory.h"
+#import "GTBLProduct.h"
 
 extern NSMutableArray *_cachedStores;
 extern NSString *_currentApiKey;
-extern gtblStore *_currentStore;
-extern gtblCategory *_currentCategory;
-extern gtblProduct *_currentProduct;
+extern GTBLStore *_currentStore;
+extern GTBLCategory *_currentCategory;
+extern GTBLProduct *_currentProduct;
 extern NSNumber *_currentCategoryId;
 
-@interface gtblAppBase
+@interface GTBLAppBase
 
--(gtblStore*)getStoreFromCache:(NSString*) apiKey;
+-(GTBLStore*)getStoreFromCache:(NSString*) apiKey;
 -(NSArray*)getProductListByCategoryFromCache:(NSString*) apiKey categoryId:(NSNumber*) categoryId;
 
 @end

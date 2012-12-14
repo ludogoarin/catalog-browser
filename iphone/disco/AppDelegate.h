@@ -1,5 +1,5 @@
 //
-//  gtblAppDelegate.h
+//  GTBLAppDelegate.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/5/12.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "gtblAppBase.h"
+#import "GTBLAppBase.h"
 
-@interface gtblAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -1,5 +1,5 @@
 //
-//  gtblCategory.h
+//  GTBLCategory.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface gtblCategory : NSObject
+@interface GTBLCategory : NSObject
 
 @property NSDate *FetchTimeStamp;
 @property NSString *Title;

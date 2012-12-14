@@ -1,29 +1,29 @@
 //
-//  gtblCategoryListViewController.m
+//  GTBLCategoryListViewController.m
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
 //  Copyright (c) 2012 Ludo Goarin. All rights reserved.
 //
 
-#import "gtblCategoryListViewController.h"
-#import "gtblServiceHandler.h"
-#import "gtblStore.h"
-#import "gtblCategory.h"
+#import "CategoryListViewController.h"
+#import "GTBLServiceHandler.h"
+#import "GTBLStore.h"
+#import "GTBLCategory.h"
 #import "CollectionViewCell.h"
 #import "URLImageCached.h"
-#import "gtblAppBase.h"
+#import "GTBLAppBase.h"
 
 
-@interface gtblCategoryListViewController ()
+@interface CategoryListViewController ()
 {
     NSMutableArray *_categories;
-    gtblStore *_store;
+    GTBLStore *_store;
 }
 
 @end
 
-@implementation gtblCategoryListViewController
+@implementation CategoryListViewController
 @synthesize arrRecords;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -50,12 +50,12 @@
 
     self.title = @"Categories";
     
-    gtblStore *store = [gtblAppBase getStoreFromCache:_currentApiKey];
+    GTBLStore *store = [GTBLAppBase getStoreFromCache:_currentApiKey];
     
     if(store != nil){
         [self fetchedStoreLocation:store];
     } else {
-    [gtblServiceHandler getStoreLocation: _currentApiKey
+    [GTBLServiceHandler getStoreLocation: _currentApiKey
                         callBackDelegate: self
                         callBackSelector: @selector(fetchedStoreLocation:)];
     }
@@ -79,9 +79,9 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"categoryItem" forIndexPath:indexPath];
-    gtblCategory *cellCategory = [_currentStore.Categories objectAtIndex:indexPath.section * noOfItemsInSection + indexPath.row];
+    GTBLCategory *cellCategory = [_currentStore.Categories objectAtIndex:indexPath.section * noOfItemsInSection + indexPath.row];
     
-    NSString *noImgUrl = @"http://lh4.googleusercontent.com/-LMaEndEK0F0/UC0t7hZilnI/AAAAAAAAFlk/NYnQvbZFxxc/s77/Blue_Flower_256x256.png";
+    NSString *noImgUrl = @"http://www.getable.com/content/images/catalog/no-photo_400x300.png";
     NSString *imgUrl = cellCategory.ImageUrl.length > 0 ? cellCategory.ImageUrl : noImgUrl;
     
     [URLImageCached loadImageWithURL:imgUrl withLoadCompleteHandler:[self setImageBlock:cell.imgCategory]];
@@ -101,7 +101,7 @@
     
 }
 
--(void)fetchedStoreLocation:(gtblStore *)store
+-(void)fetchedStoreLocation:(GTBLStore *)store
 {
     // set global variable for current store
     _currentStore = store;
@@ -114,7 +114,7 @@
 
     id item;
     while (item = [e nextObject]) {
-        NSNumber *itemId = ((gtblStore*)item).BusinessLocationId;
+        NSNumber *itemId = ((GTBLStore*)item).BusinessLocationId;
         NSNumber *fetchedId = store.BusinessLocationId;
         if ([itemId isEqualToNumber:fetchedId]){
             storeInCache = YES;
@@ -175,7 +175,7 @@
         //UITableViewCell *selectedCell = [self.storeListTable cellForRowAtIndexPath:selectedIndexPath];
         
         int index = noOfItemsInSection * selectedSection + selectedRow;
-        gtblCategory *selectedItem = _currentStore.Categories[index];
+        GTBLCategory *selectedItem = _currentStore.Categories[index];
         NSString *itemName = selectedItem.Title;
         NSLog(@"selected: %@", itemName);
         _currentCategory = selectedItem;

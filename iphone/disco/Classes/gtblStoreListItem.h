@@ -1,5 +1,5 @@
 //
-//  gtblStoreListItem.h
+//  GTBLStoreListItem.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/11/12.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface gtblStoreListItem : NSObject
+@interface GTBLStoreListItem : NSObject
 
 @property NSString *LocationName;
 @property NSDecimal *Longitude;

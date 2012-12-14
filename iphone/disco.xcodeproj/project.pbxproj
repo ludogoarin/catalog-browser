@@ -7,41 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF199A001676AB5400C0BBEE /* gtblNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1999FF1676AB5400C0BBEE /* gtblNavigationController.m */; };
+		DF199A001676AB5400C0BBEE /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1999FF1676AB5400C0BBEE /* NavigationController.m */; };
 		DF199A0D1676BDB700C0BBEE /* User-Administrator-Blue-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF199A0B1676BDB700C0BBEE /* User-Administrator-Blue-icon.png */; };
 		DF199A0E1676BDB700C0BBEE /* User-Executive-Green-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF199A0C1676BDB700C0BBEE /* User-Executive-Green-icon.png */; };
 		DF199A111676C33C00C0BBEE /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF199A101676C33C00C0BBEE /* CollectionViewCell.m */; };
 		DF199A171676C7B100C0BBEE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF199A161676C7B100C0BBEE /* SystemConfiguration.framework */; };
 		DF199A391676C8A500C0BBEE /* URLImageCached.m in Sources */ = {isa = PBXBuildFile; fileRef = DF199A361676C8A500C0BBEE /* URLImageCached.m */; };
 		DF199A3A1676C8A500C0BBEE /* URLImageLoadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF199A381676C8A500C0BBEE /* URLImageLoadOperation.m */; };
-		DF199A711678137F00C0BBEE /* gtblStoreListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DF199A701678137E00C0BBEE /* gtblStoreListItem.m */; };
-		DF199A7816781C0500C0BBEE /* gtblStoreListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF199A7716781C0400C0BBEE /* gtblStoreListViewController.m */; };
+		DF199A711678137F00C0BBEE /* GTBLStoreListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DF199A701678137E00C0BBEE /* GTBLStoreListItem.m */; };
+		DF199A7816781C0500C0BBEE /* StoreListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF199A7716781C0400C0BBEE /* StoreListViewController.m */; };
 		DF5F9410166FD2900047CC8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F940F166FD2900047CC8C /* UIKit.framework */; };
 		DF5F9412166FD2900047CC8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F9411166FD2900047CC8C /* Foundation.framework */; };
 		DF5F9414166FD2900047CC8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F9413166FD2900047CC8C /* CoreGraphics.framework */; };
 		DF5F941A166FD2900047CC8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF5F9418166FD2900047CC8C /* InfoPlist.strings */; };
 		DF5F941C166FD2900047CC8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F941B166FD2900047CC8C /* main.m */; };
-		DF5F9420166FD2900047CC8C /* gtblAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F941F166FD2900047CC8C /* gtblAppDelegate.m */; };
+		DF5F9420166FD2900047CC8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F941F166FD2900047CC8C /* AppDelegate.m */; };
 		DF5F9422166FD2900047CC8C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F9421166FD2900047CC8C /* Default.png */; };
 		DF5F9424166FD2900047CC8C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F9423166FD2900047CC8C /* Default@2x.png */; };
 		DF5F9426166FD2900047CC8C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F9425166FD2900047CC8C /* Default-568h@2x.png */; };
 		DF5F9429166FD2900047CC8C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5F9427166FD2900047CC8C /* MainStoryboard.storyboard */; };
-		DF5F942C166FD2900047CC8C /* gtblViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F942B166FD2900047CC8C /* gtblViewController.m */; };
+		DF5F942C166FD2900047CC8C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F942B166FD2900047CC8C /* RootViewController.m */; };
 		DF5F9434166FD2910047CC8C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F9433166FD2910047CC8C /* SenTestingKit.framework */; };
 		DF5F9435166FD2910047CC8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F940F166FD2900047CC8C /* UIKit.framework */; };
 		DF5F9436166FD2910047CC8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F9411166FD2900047CC8C /* Foundation.framework */; };
 		DF5F943E166FD2910047CC8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF5F943C166FD2910047CC8C /* InfoPlist.strings */; };
 		DF5F9441166FD2910047CC8C /* discoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9440166FD2910047CC8C /* discoTests.m */; };
-		DF5F944E1671352F0047CC8C /* gtblStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F944D1671352F0047CC8C /* gtblStore.m */; };
-		DF5F9451167151730047CC8C /* gtblCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9450167151730047CC8C /* gtblCategory.m */; };
-		DF5F9454167152640047CC8C /* gtblProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9453167152640047CC8C /* gtblProduct.m */; };
-		DF5F9457167155790047CC8C /* gtblServiceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9456167155790047CC8C /* gtblServiceHandler.m */; };
-		DF5F945A167159310047CC8C /* gtblAppBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9459167159310047CC8C /* gtblAppBase.m */; };
-		DF5F945D16715FE10047CC8C /* gtblDataHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F945C16715FE10047CC8C /* gtblDataHelpers.m */; };
-		DFD6B63B1671890A002B059F /* gtblStoreSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B63A1671890A002B059F /* gtblStoreSelectorViewController.m */; };
-		DFD6B64516718AE5002B059F /* gtblProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B64416718AE4002B059F /* gtblProductListViewController.m */; };
-		DFD6B64816718B1A002B059F /* gtblProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B64716718B1A002B059F /* gtblProductDetailViewController.m */; };
-		DFD6B64B16718BB5002B059F /* gtblCategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B64A16718BB5002B059F /* gtblCategoryListViewController.m */; };
+		DF5F944E1671352F0047CC8C /* GTBLStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F944D1671352F0047CC8C /* GTBLStore.m */; };
+		DF5F9451167151730047CC8C /* GTBLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9450167151730047CC8C /* GTBLCategory.m */; };
+		DF5F9454167152640047CC8C /* GTBLProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9453167152640047CC8C /* GTBLProduct.m */; };
+		DF5F9457167155790047CC8C /* GTBLServiceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9456167155790047CC8C /* GTBLServiceHandler.m */; };
+		DF5F945A167159310047CC8C /* GTBLAppBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9459167159310047CC8C /* GTBLAppBase.m */; };
+		DF5F945D16715FE10047CC8C /* GTBLDataHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F945C16715FE10047CC8C /* GTBLDataHelpers.m */; };
+		DFD6B63B1671890A002B059F /* StoreSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B63A1671890A002B059F /* StoreSelectorViewController.m */; };
+		DFD6B64516718AE5002B059F /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B64416718AE4002B059F /* ProductListViewController.m */; };
+		DFD6B64816718B1A002B059F /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B64716718B1A002B059F /* ProductDetailViewController.m */; };
+		DFD6B64B16718BB5002B059F /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B64A16718BB5002B059F /* CategoryListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DF1999FE1676AB5400C0BBEE /* gtblNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtblNavigationController.h; sourceTree = "<group>"; };
-		DF1999FF1676AB5400C0BBEE /* gtblNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gtblNavigationController.m; sourceTree = "<group>"; };
+		DF1999FE1676AB5400C0BBEE /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		DF1999FF1676AB5400C0BBEE /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		DF199A0B1676BDB700C0BBEE /* User-Administrator-Blue-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User-Administrator-Blue-icon.png"; sourceTree = "<group>"; };
 		DF199A0C1676BDB700C0BBEE /* User-Executive-Green-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User-Executive-Green-icon.png"; sourceTree = "<group>"; };
 		DF199A0F1676C33C00C0BBEE /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
@@ -67,10 +67,10 @@
 		DF199A361676C8A500C0BBEE /* URLImageCached.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLImageCached.m; sourceTree = "<group>"; };
 		DF199A371676C8A500C0BBEE /* URLImageLoadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLImageLoadOperation.h; sourceTree = "<group>"; };
 		DF199A381676C8A500C0BBEE /* URLImageLoadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLImageLoadOperation.m; sourceTree = "<group>"; };
-		DF199A6F1678137E00C0BBEE /* gtblStoreListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtblStoreListItem.h; path = Classes/gtblStoreListItem.h; sourceTree = "<group>"; };
-		DF199A701678137E00C0BBEE /* gtblStoreListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblStoreListItem.m; path = Classes/gtblStoreListItem.m; sourceTree = "<group>"; };
-		DF199A7616781C0400C0BBEE /* gtblStoreListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtblStoreListViewController.h; sourceTree = "<group>"; };
-		DF199A7716781C0400C0BBEE /* gtblStoreListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gtblStoreListViewController.m; sourceTree = "<group>"; };
+		DF199A6F1678137E00C0BBEE /* GTBLStoreListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTBLStoreListItem.h; path = Classes/GTBLStoreListItem.h; sourceTree = "<group>"; };
+		DF199A701678137E00C0BBEE /* GTBLStoreListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTBLStoreListItem.m; path = Classes/GTBLStoreListItem.m; sourceTree = "<group>"; };
+		DF199A7616781C0400C0BBEE /* StoreListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreListViewController.h; sourceTree = "<group>"; };
+		DF199A7716781C0400C0BBEE /* StoreListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreListViewController.m; sourceTree = "<group>"; };
 		DF5F940B166FD2900047CC8C /* disco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = disco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5F940F166FD2900047CC8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF5F9411166FD2900047CC8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,40 +79,40 @@
 		DF5F9419166FD2900047CC8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF5F941B166FD2900047CC8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF5F941D166FD2900047CC8C /* disco-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "disco-Prefix.pch"; sourceTree = "<group>"; };
-		DF5F941E166FD2900047CC8C /* gtblAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtblAppDelegate.h; sourceTree = "<group>"; };
-		DF5F941F166FD2900047CC8C /* gtblAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gtblAppDelegate.m; sourceTree = "<group>"; };
+		DF5F941E166FD2900047CC8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF5F941F166FD2900047CC8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DF5F9421166FD2900047CC8C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DF5F9423166FD2900047CC8C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DF5F9425166FD2900047CC8C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DF5F9428166FD2900047CC8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DF5F942A166FD2900047CC8C /* gtblViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtblViewController.h; sourceTree = "<group>"; };
-		DF5F942B166FD2900047CC8C /* gtblViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gtblViewController.m; sourceTree = "<group>"; };
+		DF5F942A166FD2900047CC8C /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		DF5F942B166FD2900047CC8C /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		DF5F9432166FD2910047CC8C /* discoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = discoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5F9433166FD2910047CC8C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DF5F943B166FD2910047CC8C /* discoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "discoTests-Info.plist"; sourceTree = "<group>"; };
 		DF5F943D166FD2910047CC8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF5F943F166FD2910047CC8C /* discoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = discoTests.h; sourceTree = "<group>"; };
 		DF5F9440166FD2910047CC8C /* discoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = discoTests.m; sourceTree = "<group>"; };
-		DF5F944C1671352F0047CC8C /* gtblStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = gtblStore.h; path = Classes/gtblStore.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		DF5F944D1671352F0047CC8C /* gtblStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblStore.m; path = Classes/gtblStore.m; sourceTree = "<group>"; };
-		DF5F944F167151730047CC8C /* gtblCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtblCategory.h; path = Classes/gtblCategory.h; sourceTree = "<group>"; };
-		DF5F9450167151730047CC8C /* gtblCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblCategory.m; path = Classes/gtblCategory.m; sourceTree = "<group>"; };
-		DF5F9452167152640047CC8C /* gtblProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtblProduct.h; path = Classes/gtblProduct.h; sourceTree = "<group>"; };
-		DF5F9453167152640047CC8C /* gtblProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblProduct.m; path = Classes/gtblProduct.m; sourceTree = "<group>"; };
-		DF5F9455167155790047CC8C /* gtblServiceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtblServiceHandler.h; path = Classes/gtblServiceHandler.h; sourceTree = "<group>"; };
-		DF5F9456167155790047CC8C /* gtblServiceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblServiceHandler.m; path = Classes/gtblServiceHandler.m; sourceTree = "<group>"; };
-		DF5F9458167159310047CC8C /* gtblAppBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtblAppBase.h; path = Classes/gtblAppBase.h; sourceTree = "<group>"; };
-		DF5F9459167159310047CC8C /* gtblAppBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblAppBase.m; path = Classes/gtblAppBase.m; sourceTree = "<group>"; };
-		DF5F945B16715FE10047CC8C /* gtblDataHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtblDataHelpers.h; path = Classes/gtblDataHelpers.h; sourceTree = "<group>"; };
-		DF5F945C16715FE10047CC8C /* gtblDataHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gtblDataHelpers.m; path = Classes/gtblDataHelpers.m; sourceTree = "<group>"; };
-		DFD6B6391671890A002B059F /* gtblStoreSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtblStoreSelectorViewController.h; sourceTree = "<group>"; };
-		DFD6B63A1671890A002B059F /* gtblStoreSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gtblStoreSelectorViewController.m; sourceTree = "<group>"; };
-		DFD6B64316718AE4002B059F /* gtblProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtblProductListViewController.h; sourceTree = "<group>"; };
-		DFD6B64416718AE4002B059F /* gtblProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gtblProductListViewController.m; sourceTree = "<group>"; };
-		DFD6B64616718B1A002B059F /* gtblProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtblProductDetailViewController.h; sourceTree = "<group>"; };
-		DFD6B64716718B1A002B059F /* gtblProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gtblProductDetailViewController.m; sourceTree = "<group>"; };
-		DFD6B64916718BB5002B059F /* gtblCategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtblCategoryListViewController.h; sourceTree = "<group>"; };
-		DFD6B64A16718BB5002B059F /* gtblCategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gtblCategoryListViewController.m; sourceTree = "<group>"; };
+		DF5F944C1671352F0047CC8C /* GTBLStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = GTBLStore.h; path = Classes/GTBLStore.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DF5F944D1671352F0047CC8C /* GTBLStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTBLStore.m; path = Classes/GTBLStore.m; sourceTree = "<group>"; };
+		DF5F944F167151730047CC8C /* GTBLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTBLCategory.h; path = Classes/GTBLCategory.h; sourceTree = "<group>"; };
+		DF5F9450167151730047CC8C /* GTBLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTBLCategory.m; path = Classes/GTBLCategory.m; sourceTree = "<group>"; };
+		DF5F9452167152640047CC8C /* GTBLProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTBLProduct.h; path = Classes/GTBLProduct.h; sourceTree = "<group>"; };
+		DF5F9453167152640047CC8C /* GTBLProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTBLProduct.m; path = Classes/GTBLProduct.m; sourceTree = "<group>"; };
+		DF5F9455167155790047CC8C /* GTBLServiceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTBLServiceHandler.h; path = Classes/GTBLServiceHandler.h; sourceTree = "<group>"; };
+		DF5F9456167155790047CC8C /* GTBLServiceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTBLServiceHandler.m; path = Classes/GTBLServiceHandler.m; sourceTree = "<group>"; };
+		DF5F9458167159310047CC8C /* GTBLAppBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = GTBLAppBase.h; path = Classes/GTBLAppBase.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DF5F9459167159310047CC8C /* GTBLAppBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = GTBLAppBase.m; path = Classes/GTBLAppBase.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		DF5F945B16715FE10047CC8C /* GTBLDataHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTBLDataHelpers.h; path = Classes/GTBLDataHelpers.h; sourceTree = "<group>"; };
+		DF5F945C16715FE10047CC8C /* GTBLDataHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTBLDataHelpers.m; path = Classes/GTBLDataHelpers.m; sourceTree = "<group>"; };
+		DFD6B6391671890A002B059F /* StoreSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreSelectorViewController.h; sourceTree = "<group>"; };
+		DFD6B63A1671890A002B059F /* StoreSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreSelectorViewController.m; sourceTree = "<group>"; };
+		DFD6B64316718AE4002B059F /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		DFD6B64416718AE4002B059F /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
+		DFD6B64616718B1A002B059F /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		DFD6B64716718B1A002B059F /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		DFD6B64916718BB5002B059F /* CategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListViewController.h; sourceTree = "<group>"; };
+		DFD6B64A16718BB5002B059F /* CategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 		DF5F9400166FD2900047CC8C = {
 			isa = PBXGroup;
 			children = (
-				DF199A161676C7B100C0BBEE /* SystemConfiguration.framework */,
 				DF5F9415166FD2900047CC8C /* disco */,
 				DF5F9439166FD2910047CC8C /* discoTests */,
 				DF5F940E166FD2900047CC8C /* Frameworks */,
@@ -176,6 +175,7 @@
 		DF5F940E166FD2900047CC8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF199A161676C7B100C0BBEE /* SystemConfiguration.framework */,
 				DF5F940F166FD2900047CC8C /* UIKit.framework */,
 				DF5F9411166FD2900047CC8C /* Foundation.framework */,
 				DF5F9413166FD2900047CC8C /* CoreGraphics.framework */,
@@ -190,26 +190,26 @@
 				DF199A0F1676C33C00C0BBEE /* CollectionViewCell.h */,
 				DF199A101676C33C00C0BBEE /* CollectionViewCell.m */,
 				DF5F944B167134C20047CC8C /* Classes */,
-				DF5F941E166FD2900047CC8C /* gtblAppDelegate.h */,
-				DF5F941F166FD2900047CC8C /* gtblAppDelegate.m */,
-				DFD6B64916718BB5002B059F /* gtblCategoryListViewController.h */,
-				DFD6B64A16718BB5002B059F /* gtblCategoryListViewController.m */,
-				DF1999FE1676AB5400C0BBEE /* gtblNavigationController.h */,
-				DF1999FF1676AB5400C0BBEE /* gtblNavigationController.m */,
-				DFD6B64616718B1A002B059F /* gtblProductDetailViewController.h */,
-				DFD6B64716718B1A002B059F /* gtblProductDetailViewController.m */,
-				DFD6B64316718AE4002B059F /* gtblProductListViewController.h */,
-				DFD6B64416718AE4002B059F /* gtblProductListViewController.m */,
-				DFD6B6391671890A002B059F /* gtblStoreSelectorViewController.h */,
-				DFD6B63A1671890A002B059F /* gtblStoreSelectorViewController.m */,
-				DF5F942A166FD2900047CC8C /* gtblViewController.h */,
-				DF5F942B166FD2900047CC8C /* gtblViewController.m */,
+				DF5F941E166FD2900047CC8C /* AppDelegate.h */,
+				DF5F941F166FD2900047CC8C /* AppDelegate.m */,
+				DFD6B64916718BB5002B059F /* CategoryListViewController.h */,
+				DFD6B64A16718BB5002B059F /* CategoryListViewController.m */,
+				DF1999FE1676AB5400C0BBEE /* NavigationController.h */,
+				DF1999FF1676AB5400C0BBEE /* NavigationController.m */,
+				DFD6B64616718B1A002B059F /* ProductDetailViewController.h */,
+				DFD6B64716718B1A002B059F /* ProductDetailViewController.m */,
+				DFD6B64316718AE4002B059F /* ProductListViewController.h */,
+				DFD6B64416718AE4002B059F /* ProductListViewController.m */,
+				DFD6B6391671890A002B059F /* StoreSelectorViewController.h */,
+				DFD6B63A1671890A002B059F /* StoreSelectorViewController.m */,
+				DF5F942A166FD2900047CC8C /* RootViewController.h */,
+				DF5F942B166FD2900047CC8C /* RootViewController.m */,
 				DF5F9427166FD2900047CC8C /* MainStoryboard.storyboard */,
 				DF5F9416166FD2900047CC8C /* Supporting Files */,
 				DF199A0B1676BDB700C0BBEE /* User-Administrator-Blue-icon.png */,
 				DF199A0C1676BDB700C0BBEE /* User-Executive-Green-icon.png */,
-				DF199A7616781C0400C0BBEE /* gtblStoreListViewController.h */,
-				DF199A7716781C0400C0BBEE /* gtblStoreListViewController.m */,
+				DF199A7616781C0400C0BBEE /* StoreListViewController.h */,
+				DF199A7716781C0400C0BBEE /* StoreListViewController.m */,
 			);
 			path = disco;
 			sourceTree = "<group>";
@@ -250,20 +250,20 @@
 		DF5F944B167134C20047CC8C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DF5F9458167159310047CC8C /* gtblAppBase.h */,
-				DF5F9459167159310047CC8C /* gtblAppBase.m */,
-				DF5F944F167151730047CC8C /* gtblCategory.h */,
-				DF5F9450167151730047CC8C /* gtblCategory.m */,
-				DF5F945B16715FE10047CC8C /* gtblDataHelpers.h */,
-				DF5F945C16715FE10047CC8C /* gtblDataHelpers.m */,
-				DF5F9452167152640047CC8C /* gtblProduct.h */,
-				DF5F9453167152640047CC8C /* gtblProduct.m */,
-				DF5F9455167155790047CC8C /* gtblServiceHandler.h */,
-				DF5F9456167155790047CC8C /* gtblServiceHandler.m */,
-				DF5F944C1671352F0047CC8C /* gtblStore.h */,
-				DF5F944D1671352F0047CC8C /* gtblStore.m */,
-				DF199A6F1678137E00C0BBEE /* gtblStoreListItem.h */,
-				DF199A701678137E00C0BBEE /* gtblStoreListItem.m */,
+				DF5F9458167159310047CC8C /* GTBLAppBase.h */,
+				DF5F9459167159310047CC8C /* GTBLAppBase.m */,
+				DF5F944F167151730047CC8C /* GTBLCategory.h */,
+				DF5F9450167151730047CC8C /* GTBLCategory.m */,
+				DF5F945B16715FE10047CC8C /* GTBLDataHelpers.h */,
+				DF5F945C16715FE10047CC8C /* GTBLDataHelpers.m */,
+				DF5F9452167152640047CC8C /* GTBLProduct.h */,
+				DF5F9453167152640047CC8C /* GTBLProduct.m */,
+				DF5F9455167155790047CC8C /* GTBLServiceHandler.h */,
+				DF5F9456167155790047CC8C /* GTBLServiceHandler.m */,
+				DF5F944C1671352F0047CC8C /* GTBLStore.h */,
+				DF5F944D1671352F0047CC8C /* GTBLStore.m */,
+				DF199A6F1678137E00C0BBEE /* GTBLStoreListItem.h */,
+				DF199A701678137E00C0BBEE /* GTBLStoreListItem.m */,
 				DF199A331676C8A500C0BBEE /* utilities */,
 			);
 			name = Classes;
@@ -314,7 +314,7 @@
 		DF5F9402166FD2900047CC8C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = gtbl;
+				CLASSPREFIX = GTBL;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Ludo Goarin";
 			};
@@ -383,24 +383,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5F941C166FD2900047CC8C /* main.m in Sources */,
-				DF5F9420166FD2900047CC8C /* gtblAppDelegate.m in Sources */,
-				DF5F942C166FD2900047CC8C /* gtblViewController.m in Sources */,
-				DF5F944E1671352F0047CC8C /* gtblStore.m in Sources */,
-				DF5F9451167151730047CC8C /* gtblCategory.m in Sources */,
-				DF5F9454167152640047CC8C /* gtblProduct.m in Sources */,
-				DF5F9457167155790047CC8C /* gtblServiceHandler.m in Sources */,
-				DF5F945A167159310047CC8C /* gtblAppBase.m in Sources */,
-				DF5F945D16715FE10047CC8C /* gtblDataHelpers.m in Sources */,
-				DFD6B63B1671890A002B059F /* gtblStoreSelectorViewController.m in Sources */,
-				DFD6B64516718AE5002B059F /* gtblProductListViewController.m in Sources */,
-				DFD6B64816718B1A002B059F /* gtblProductDetailViewController.m in Sources */,
-				DFD6B64B16718BB5002B059F /* gtblCategoryListViewController.m in Sources */,
-				DF199A001676AB5400C0BBEE /* gtblNavigationController.m in Sources */,
+				DF5F9420166FD2900047CC8C /* AppDelegate.m in Sources */,
+				DF5F942C166FD2900047CC8C /* RootViewController.m in Sources */,
+				DF5F944E1671352F0047CC8C /* GTBLStore.m in Sources */,
+				DF5F9451167151730047CC8C /* GTBLCategory.m in Sources */,
+				DF5F9454167152640047CC8C /* GTBLProduct.m in Sources */,
+				DF5F9457167155790047CC8C /* GTBLServiceHandler.m in Sources */,
+				DF5F945A167159310047CC8C /* GTBLAppBase.m in Sources */,
+				DF5F945D16715FE10047CC8C /* GTBLDataHelpers.m in Sources */,
+				DFD6B63B1671890A002B059F /* StoreSelectorViewController.m in Sources */,
+				DFD6B64516718AE5002B059F /* ProductListViewController.m in Sources */,
+				DFD6B64816718B1A002B059F /* ProductDetailViewController.m in Sources */,
+				DFD6B64B16718BB5002B059F /* CategoryListViewController.m in Sources */,
+				DF199A001676AB5400C0BBEE /* NavigationController.m in Sources */,
 				DF199A111676C33C00C0BBEE /* CollectionViewCell.m in Sources */,
 				DF199A391676C8A500C0BBEE /* URLImageCached.m in Sources */,
 				DF199A3A1676C8A500C0BBEE /* URLImageLoadOperation.m in Sources */,
-				DF199A711678137F00C0BBEE /* gtblStoreListItem.m in Sources */,
-				DF199A7816781C0500C0BBEE /* gtblStoreListViewController.m in Sources */,
+				DF199A711678137F00C0BBEE /* GTBLStoreListItem.m in Sources */,
+				DF199A7816781C0500C0BBEE /* StoreListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

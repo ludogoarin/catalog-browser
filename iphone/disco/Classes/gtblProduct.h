@@ -1,5 +1,5 @@
 //
-//  gtblProduct.h
+//  GTBLProduct.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface gtblProduct : NSObject
+@interface GTBLProduct : NSObject
 
 @property NSDate *FetchTimeStamp;
 @property NSString *Name;

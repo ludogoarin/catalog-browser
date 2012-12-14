@@ -1,5 +1,5 @@
 //
-//  gtblCategoryListViewController.h
+//  GTBLCategoryListViewController.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "gtblStore.h"
+#import "GTBLStore.h"
 
-@interface gtblCategoryListViewController : UICollectionViewController
+@interface CategoryListViewController : UICollectionViewController
 {
     NSMutableArray *arrRecords;
     int noOfItemsInSection;
@@ -20,7 +20,7 @@
 }
 
 @property (nonatomic, retain) NSMutableArray *arrRecords;
--(void)fetchedStoreLocation:(gtblStore *)store;
+-(void)fetchedStoreLocation:(GTBLStore *)store;
 -(void)fetchedCategoryProducts:(NSData *)responseData;
 
 @end

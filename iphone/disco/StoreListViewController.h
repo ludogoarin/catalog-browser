@@ -1,5 +1,5 @@
 //
-//  gtblStoreListViewController.h
+//  GTBLStoreListViewController.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/11/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface gtblStoreListViewController : UITableViewController
+@interface StoreListViewController : UITableViewController
 
 @end

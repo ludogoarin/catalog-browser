@@ -1,17 +1,17 @@
 //
-//  gtblAppDelegate.m
+//  GTBLAppDelegate.m
 //  disco
 //
 //  Created by Ludo Goarin on 12/5/12.
 //  Copyright (c) 2012 Ludo Goarin. All rights reserved.
 //
 
-#import "gtblAppDelegate.h"
-#import "gtblAppBase.h"
+#import "AppDelegate.h"
+#import "GTBLAppBase.h"
 
 
 
-@implementation gtblAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

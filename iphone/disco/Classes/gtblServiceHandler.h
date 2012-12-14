@@ -1,5 +1,5 @@
 //
-//  gtblServiceHandler.h
+//  GTBLServiceHandler.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface gtblServiceHandler : NSObject
+@interface GTBLServiceHandler : NSObject
 
 + (void) getStoreLocation:(NSString*)apiKey callBackDelegate:(id) callBackDelegate callBackSelector:(SEL) callBackSelector;
 + (void) getStoreLocationNSURL:(NSString*)apiKey;

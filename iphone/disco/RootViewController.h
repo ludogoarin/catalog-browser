@@ -1,5 +1,5 @@
 //
-//  gtblViewController.h
+//  GTBLViewController.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/5/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface gtblViewController : UIViewController
+@interface RootViewController : UIViewController
 
 @end

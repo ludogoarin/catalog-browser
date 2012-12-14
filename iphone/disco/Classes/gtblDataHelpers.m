@@ -1,18 +1,18 @@
 //
-//  gtblDataHelpers.m
+//  GTBLDataHelpers.m
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
 //  Copyright (c) 2012 Ludo Goarin. All rights reserved.
 //
 
-#import "gtblDataHelpers.h"
+#import "GTBLDataHelpers.h"
 
-@implementation gtblDataHelpers
+@implementation GTBLDataHelpers
 
-+(gtblStore *) parseJsonToStore:(NSData *)data
++(GTBLStore *) parseJsonToStore:(NSData *)data
 {
-    gtblStore *store = [[gtblStore alloc] init];
+    GTBLStore *store = [[GTBLStore alloc] init];
     
     // parse json data    
     NSData *jsonData = [self cleanupJSON:data];
@@ -62,9 +62,9 @@
     return store;
 }
 
-+(gtblCategory *) parseJsonToCategory:(NSDictionary *)data
++(GTBLCategory *) parseJsonToCategory:(NSDictionary *)data
 {
-    gtblCategory *category = [[gtblCategory alloc] init];
+    GTBLCategory *category = [[GTBLCategory alloc] init];
     
     category.FetchTimeStamp = [NSDate date];
     category.Title = [data objectForKey:@"Title"];
@@ -74,9 +74,9 @@
     return category;
 }
 
-+(gtblProduct *) parseJsonToProduct:(NSDictionary *)data
++(GTBLProduct *) parseJsonToProduct:(NSDictionary *)data
 {
-    gtblProduct *product = [[gtblProduct alloc] init];
+    GTBLProduct *product = [[GTBLProduct alloc] init];
     
     product.FetchTimeStamp = [NSDate date];
     product.Name = [data objectForKey:@"Name"];

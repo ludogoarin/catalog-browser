@@ -1,5 +1,5 @@
 //
-//  gtblStoreSelectorViewController.h
+//  GTBLStoreSelectorViewController.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface gtblStoreSelectorViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface StoreSelectorViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *storeListTable;
 
 @end

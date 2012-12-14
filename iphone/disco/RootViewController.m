@@ -1,21 +1,21 @@
 //
-//  gtblViewController.m
+//  GTBLViewController.m
 //  disco
 //
 //  Created by Ludo Goarin on 12/5/12.
 //  Copyright (c) 2012 Ludo Goarin. All rights reserved.
 //
 
-#import "gtblViewController.h"
+#import "RootViewController.h"
 
-@interface gtblViewController () {
+@interface RootViewController () {
     NSMutableArray *_categories;
     NSMutableArray *_products;
 }
 
 @end
 
-@implementation gtblViewController
+@implementation RootViewController
 
 - (void)viewDidLoad
 {

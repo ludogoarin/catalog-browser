@@ -1,22 +1,22 @@
 //
-//  gtblStoreListViewController.m
+//  GTBLStoreListViewController.m
 //  disco
 //
 //  Created by Ludo Goarin on 12/11/12.
 //  Copyright (c) 2012 Ludo Goarin. All rights reserved.
 //
 
-#import "gtblStoreListViewController.h"
-#import "gtblStoreListItem.h"
-#import "gtblAppBase.h"
+#import "StoreListViewController.h"
+#import "GTBLStoreListItem.h"
+#import "GTBLAppBase.h"
 
-@interface gtblStoreListViewController ()
+@interface StoreListViewController ()
 {
     NSMutableArray *_objects;
 }
 @end
 
-@implementation gtblStoreListViewController
+@implementation StoreListViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -41,7 +41,7 @@
     
     _objects = [[NSMutableArray alloc] init];
     for (int i = 0; i < 20; i++) {
-        gtblStoreListItem *item;
+        GTBLStoreListItem *item;
         item.ApiKey = @"7e8bec75-9829-4088-89b2-88d02f7d901c";
         item.BusinessName = [NSString stringWithFormat: @"SF Party %d", i];
         [_objects addObject:item];
@@ -73,7 +73,7 @@
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    gtblStoreListItem *cellObject = [_objects objectAtIndex:indexPath.section + indexPath.row];
+    GTBLStoreListItem *cellObject = [_objects objectAtIndex:indexPath.section + indexPath.row];
     
     cell.textLabel.text = cellObject.BusinessName;
     // Configure the cell...
@@ -86,7 +86,7 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        gtblStoreListItem *selectedStoreItem = _objects[indexPath.row];
+        GTBLStoreListItem *selectedStoreItem = _objects[indexPath.row];
         _currentApiKey = selectedStoreItem.ApiKey;
         //[[segue _] setDetailItem:object];
     }

@@ -1,22 +1,22 @@
 //
-//  gtblAppBase.m
+//  GTBLAppBase.m
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
 //  Copyright (c) 2012 Ludo Goarin. All rights reserved.
 //
 
-#import "gtblAppBase.h"
+#import "GTBLAppBase.h"
 
-@implementation gtblAppBase
+@implementation GTBLAppBase
 
--(gtblStore*)getStoreFromCache:(NSString*) apiKey{
+-(GTBLStore*)getStoreFromCache:(NSString*) apiKey{
     NSEnumerator *e = [_cachedStores objectEnumerator];
     id item;
     while (item = [e nextObject]) {
-        gtblStore *store = ((gtblStore*)item);
+        GTBLStore *store = ((GTBLStore*)item);
         NSString *cacheItemApiKey = store.WidgetAPIKey;
-        if ([cacheItemApiKey isEqualToString: apiKey]){
+        if ([cacheItemApiKey isEqualToString: [apiKey lowercaseString]]){
             return store;
         }
     };
@@ -24,7 +24,7 @@
 }
 
 -(NSArray*)getProductListByCategoryFromCache:(NSString*) apiKey categoryId:(NSNumber*) categoryId{
-    gtblStore *store = [self getStoreFromCache:apiKey];
+    GTBLStore *store = [self getStoreFromCache:apiKey];
     
     if (!store) {
         return nil;
@@ -33,7 +33,7 @@
         NSEnumerator *e = [store.Categories objectEnumerator];
         id item;
         while (item = [e nextObject]) {
-            gtblCategory *category = ((gtblCategory*)item);
+            GTBLCategory *category = ((GTBLCategory*)item);
             NSNumber *cacheItemId = category.CategoryId;
             if ([cacheItemId isEqualToNumber: categoryId]){
                 return category.Products;
@@ -48,7 +48,7 @@
 
 NSMutableArray *_cachedStores;
 NSString *_currentApiKey;
-gtblStore *_currentStore;
-gtblCategory *_currentCategory;
-gtblProduct *_currentProduct;
+GTBLStore *_currentStore;
+GTBLCategory *_currentCategory;
+GTBLProduct *_currentProduct;
 NSNumber *_currentCategoryId;

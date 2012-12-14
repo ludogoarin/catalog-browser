@@ -1,25 +1,25 @@
 //
-//  gtblProductListViewController.m
+//  GTBLProductListViewController.m
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
 //  Copyright (c) 2012 Ludo Goarin. All rights reserved.
 //
 
-#import "gtblProductListViewController.h"
-#import "gtblServiceHandler.h"
-#import "gtblStore.h"
-#import "gtblCategory.h"
-#import "gtblProduct.h"
+#import "ProductListViewController.h"
+#import "GTBLServiceHandler.h"
+#import "GTBLStore.h"
+#import "GTBLCategory.h"
+#import "GTBLProduct.h"
 #import "CollectionViewCell.h"
 #import "URLImageCached.h"
-#import "gtblAppBase.h"
+#import "GTBLAppBase.h"
 
-@interface gtblProductListViewController ()
+@interface ProductListViewController ()
 
 @end
 
-@implementation gtblProductListViewController
+@implementation ProductListViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,12 +36,12 @@
 	// Do any additional setup after loading the view.
     
     NSLog(@"loaded: product list");
-    NSArray *products = [gtblAppBase getProductListByCategoryFromCache:_currentApiKey categoryId: _currentCategoryId];
+    NSArray *products = [GTBLAppBase getProductListByCategoryFromCache:_currentApiKey categoryId: _currentCategoryId];
     
     if(products != nil){
         [self fetchedCategoryProducts:products];
     } else {
-        [gtblServiceHandler getStoreCategoryProducts:_currentApiKey categoryId:_currentCategoryId
+        [GTBLServiceHandler getStoreCategoryProducts:_currentApiKey categoryId:_currentCategoryId
                             callBackDelegate: self
                             callBackSelector: @selector(fetchedCategoryProducts:)];
     }
@@ -90,7 +90,7 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"productItem" forIndexPath:indexPath];
     
-    gtblProduct *item = _currentCategory.Products[indexPath.row];
+    GTBLProduct *item = _currentCategory.Products[indexPath.row];
     cell.textLabel.text = item.Name;
     return cell;
 }

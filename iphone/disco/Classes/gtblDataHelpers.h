@@ -1,5 +1,5 @@
 //
-//  gtblDataHelpers.h
+//  GTBLDataHelpers.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-#import "gtblStore.h"
-#import "gtblCategory.h"
-#import "gtblProduct.h"
+#import "GTBLStore.h"
+#import "GTBLCategory.h"
+#import "GTBLProduct.h"
 
-@interface gtblDataHelpers : NSObject
+@interface GTBLDataHelpers : NSObject
 
-+(gtblStore *)parseJsonToStore:(NSData *) data;
-+(gtblCategory *)parseJsonToCategory:(NSData *) data;
-+(gtblProduct *)parseJsonToProduct:(NSData *) data;
++(GTBLStore *)parseJsonToStore:(NSData *) data;
++(GTBLCategory *)parseJsonToCategory:(NSData *) data;
++(GTBLProduct *)parseJsonToProduct:(NSData *) data;
 +(NSArray *) parseJsonToCategories:(NSData *) data;
 +(NSArray *) parseJsonToProducts:(NSData *) data;
 +(NSArray *) parseRawJsonToProducts:(NSData *)data;

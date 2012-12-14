@@ -1,5 +1,5 @@
 //
-//  gtblProductListViewController.h
+//  GTBLProductListViewController.h
 //  disco
 //
 //  Created by Ludo Goarin on 12/6/12.
@@ -7,15 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "gtblCategory.h"
-#import "gtblProduct.h"
+#import "GTBLCategory.h"
+#import "GTBLProduct.h"
 
-@interface gtblProductListViewController : UITableViewController
+@interface ProductListViewController : UITableViewController
 {
     int noOfItemsInSection;
     int noOfItems;
 }
 
-@property gtblCategory *category;
+@property GTBLCategory *category;
 
 @end

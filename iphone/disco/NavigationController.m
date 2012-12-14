@@ -1,18 +1,18 @@
 //
-//  gtblNavigationController.m
+//  GTBLNavigationController.m
 //  disco
 //
 //  Created by Ludo Goarin on 12/10/12.
 //  Copyright (c) 2012 Ludo Goarin. All rights reserved.
 //
 
-#import "gtblNavigationController.h"
+#import "NavigationController.h"
 
-@interface gtblNavigationController ()
+@interface NavigationController ()
 
 @end
 
-@implementation gtblNavigationController
+@implementation NavigationController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
