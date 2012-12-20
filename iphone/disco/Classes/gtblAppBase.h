@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+
 #import "GTBLStore.h"
 #import "GTBLCategory.h"
 #import "GTBLProduct.h"
+#import "GTBLProductReservation.h"
 
 extern NSMutableArray *_cachedStores;
 extern NSString *_currentApiKey;
@@ -22,5 +25,6 @@ extern NSNumber *_currentCategoryId;
 
 -(GTBLStore*)getStoreFromCache:(NSString*) apiKey;
 -(NSArray*)getProductListByCategoryFromCache:(NSString*) apiKey categoryId:(NSNumber*) categoryId;
+-(UIColor*)RGB:(int)red green:(int)green blue:(int)blue;
 
 @end

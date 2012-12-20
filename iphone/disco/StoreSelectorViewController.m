@@ -119,6 +119,14 @@
 {
     if ([[segue identifier] isEqualToString:@"showStore"]) {
         UITableViewCell *cell  = (UITableViewCell *)sender;
+        
+        UIView *loader = [[UIView alloc] initWithFrame:CGRectMake(0, 200, 320, 50)];
+        UIActivityIndicatorView *activityVw = [[UIActivityIndicatorView alloc] init];
+        UILabel *lblLoading = [[UILabel alloc] init];
+        lblLoading.text = @"loading...";
+        [self.view addSubview:lblLoading];
+        [self.loader addSubview:activityVw];
+        [self.view addSubview:loader];
 
         
         NSIndexPath *selectedIndexPath = [self.storeListTable indexPathForSelectedRow];

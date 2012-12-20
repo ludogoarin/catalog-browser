@@ -10,8 +10,7 @@
 
 @implementation GTBLDataHelpers
 
-+(GTBLStore *) parseJsonToStore:(NSData *)data
-{
++(GTBLStore *) parseJsonToStore:(NSData *)data {
     GTBLStore *store = [[GTBLStore alloc] init];
     
     // parse json data    
@@ -62,8 +61,7 @@
     return store;
 }
 
-+(GTBLCategory *) parseJsonToCategory:(NSDictionary *)data
-{
++(GTBLCategory *) parseJsonToCategory:(NSDictionary *)data {
     GTBLCategory *category = [[GTBLCategory alloc] init];
     
     category.FetchTimeStamp = [NSDate date];
@@ -74,8 +72,7 @@
     return category;
 }
 
-+(GTBLProduct *) parseJsonToProduct:(NSDictionary *)data
-{
++(GTBLProduct *) parseJsonToProduct:(NSDictionary *)data {
     GTBLProduct *product = [[GTBLProduct alloc] init];
     
     product.FetchTimeStamp = [NSDate date];
@@ -101,8 +98,34 @@
     return product;
 }
 
-+(NSMutableArray *) parseJsonToCategories:(NSArray *)jsCategories
-{
++(GTBLProductReservation *)parseJsonAvailabilityToProductReservation:(NSDictionary *)data {
+    GTBLProductReservation *reservation = [[GTBLProductReservation alloc] init];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    reservation.FetchTimeStamp = [NSDate date];
+    reservation.ProductId = [data objectForKey:@"ProductId"];
+    reservation.Quantity = [[data objectForKey:@"Quantity"] intValue];
+    reservation.RentalStart = [dateFormatter dateFromString: [data objectForKey:@"RentalStart"]];
+    reservation.RentalEnd = [dateFormatter dateFromString: [data objectForKey:@"RentalEnd"]];
+    reservation.RentalStartDayOfWeek = [data objectForKey:@"RentalStartDayOfWeek"];
+    reservation.RentalEndDayOfWeek = [data objectForKey:@"RentalEndDayOfWeek"];
+    reservation.RentalTotalDays = [[data objectForKey:@"RentalTotalDays"] intValue];
+    reservation.RentalTotalHours = [[data objectForKey:@"RentalTotalHours"] intValue];
+    reservation.RentalTotalMinutes = [[data objectForKey:@"RentalTotalMinutes"] intValue];
+    reservation.Price = [data objectForKey:@"Price"];
+    reservation.Availability = [[data objectForKey:@"Availability"] intValue];
+    reservation.RateAmount = [data objectForKey:@"RateAmount"];
+    reservation.RateTimeUnit = [data objectForKey:@"RateTimeUnit"];
+    reservation.RateUnitCount = [data objectForKey:@"RateUnitCount"];
+    reservation.RatePerUnitCount = [data objectForKey:@"RatePerUnitCount"];
+    reservation.IsValid = [[data objectForKey:@"IsValid"] intValue] == 1;
+    reservation.ReturnCode = [[data objectForKey:@"RentalStartDayOfWeek"] intValue];
+    reservation.Messages = nil;//[data objectForKey:@"RentalStartDayOfWeek"];
+    
+    return reservation;
+}
+
++(NSMutableArray *) parseJsonToCategories:(NSArray *)jsCategories {
     NSEnumerator *e = [jsCategories objectEnumerator];
 
     NSMutableArray *categories = [[NSMutableArray alloc] init];
@@ -118,8 +141,7 @@
     return categories;
 }
 
-+(NSArray *) parseRawJsonToProducts:(NSData *)data
-{
++(NSArray *) parseRawJsonToProducts:(NSData *)data {
     // parse json data
     NSData *jsonData = [self cleanupJSON:data];
     NSError* error;
@@ -130,9 +152,7 @@
     return [self parseJsonToProducts:jsItems];
 }
 
-
-+(NSMutableArray *) parseJsonToProducts:(NSArray *)jsProducts
-{
++(NSMutableArray *) parseJsonToProducts:(NSArray *)jsProducts {
     NSEnumerator *e = [jsProducts objectEnumerator];
     
     NSMutableArray *products = [[NSMutableArray alloc] init];
@@ -148,8 +168,7 @@
     return products;
 }
 
-+(NSData *)cleanupJSON:(NSData *)data{
-    
++(NSData *)cleanupJSON:(NSData *)data {    
     // parse json data
     // remove opening and closing parenthesis
     NSString* dataString;
@@ -193,6 +212,5 @@
     };
     
 }
-
 
 @end

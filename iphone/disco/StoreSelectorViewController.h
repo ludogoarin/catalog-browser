@@ -10,5 +10,6 @@
 
 @interface StoreSelectorViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *storeListTable;
+@property UIView *loader;
 
 @end

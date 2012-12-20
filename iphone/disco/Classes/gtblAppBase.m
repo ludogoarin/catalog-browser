@@ -44,6 +44,10 @@
     return nil;
 }
 
+-(UIColor*)RGB:(int)red green:(int)green blue:(int)blue {
+    return [[UIColor alloc] initWithRed:(red/255.f) green:(green/255.f) blue:(blue/255.f) alpha:1];
+}
+
 @end
 
 NSMutableArray *_cachedStores;

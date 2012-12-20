@@ -11,14 +11,17 @@
 #import "GTBLStore.h"
 #import "GTBLCategory.h"
 #import "GTBLProduct.h"
+#import "GTBLProductReservation.h"
 
 @interface GTBLDataHelpers : NSObject
 
-+(GTBLStore *)parseJsonToStore:(NSData *) data;
-+(GTBLCategory *)parseJsonToCategory:(NSData *) data;
-+(GTBLProduct *)parseJsonToProduct:(NSData *) data;
-+(NSArray *) parseJsonToCategories:(NSData *) data;
-+(NSArray *) parseJsonToProducts:(NSData *) data;
++(GTBLStore *)parseJsonToStore:(NSData *)data;
++(GTBLCategory *)parseJsonToCategory:(NSData *)data;
++(GTBLProduct *)parseJsonToProduct:(NSData *)data;
++(GTBLProductReservation *)parseJsonAvailabilityToProductReservation:(NSDictionary*)data;
++(NSArray *) parseJsonToCategories:(NSData *)data;
++(NSArray *) parseJsonToProducts:(NSData *)data;
 +(NSArray *) parseRawJsonToProducts:(NSData *)data;
++(NSData *) cleanupJSON:(NSData *)data;
 
 @end

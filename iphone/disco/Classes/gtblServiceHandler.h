@@ -13,5 +13,6 @@
 + (void) getStoreLocation:(NSString*)apiKey callBackDelegate:(id) callBackDelegate callBackSelector:(SEL) callBackSelector;
 + (void) getStoreLocationNSURL:(NSString*)apiKey;
 + (void) getStoreCategoryProducts:(NSString*)apiKey categoryId:(NSNumber*)categoryId callBackDelegate:(id) callBackDelegate callBackSelector:(SEL) callBackSelector;
++ (void) getProductAvailability:(NSString*)apiKey productId:(NSNumber*)productId start:(NSString*)start end:(NSString*)end quantity:(int)quantity callBackDelegate:(id) callBackDelegate callBackSelector:(SEL)callBackSelector;
 
 @end

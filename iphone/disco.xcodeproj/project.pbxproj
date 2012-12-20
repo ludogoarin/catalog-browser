@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF18F333167BF0F300797B01 /* UIColor-util.m in Sources */ = {isa = PBXBuildFile; fileRef = DF18F332167BF0F300797B01 /* UIColor-util.m */; };
 		DF199A001676AB5400C0BBEE /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1999FF1676AB5400C0BBEE /* NavigationController.m */; };
 		DF199A0D1676BDB700C0BBEE /* User-Administrator-Blue-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF199A0B1676BDB700C0BBEE /* User-Administrator-Blue-icon.png */; };
 		DF199A0E1676BDB700C0BBEE /* User-Executive-Green-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF199A0C1676BDB700C0BBEE /* User-Executive-Green-icon.png */; };
@@ -42,6 +43,7 @@
 		DFD6B64516718AE5002B059F /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B64416718AE4002B059F /* ProductListViewController.m */; };
 		DFD6B64816718B1A002B059F /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B64716718B1A002B059F /* ProductDetailViewController.m */; };
 		DFD6B64B16718BB5002B059F /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B64A16718BB5002B059F /* CategoryListViewController.m */; };
+		DFF762F7168128210095E852 /* GTBLProductReservation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF762F6168128210095E852 /* GTBLProductReservation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF18F331167BF0F300797B01 /* UIColor-util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-util.h"; sourceTree = "<group>"; };
+		DF18F332167BF0F300797B01 /* UIColor-util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-util.m"; sourceTree = "<group>"; };
 		DF1999FE1676AB5400C0BBEE /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		DF1999FF1676AB5400C0BBEE /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		DF199A0B1676BDB700C0BBEE /* User-Administrator-Blue-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User-Administrator-Blue-icon.png"; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 		DFD6B64716718B1A002B059F /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
 		DFD6B64916718BB5002B059F /* CategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListViewController.h; sourceTree = "<group>"; };
 		DFD6B64A16718BB5002B059F /* CategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListViewController.m; sourceTree = "<group>"; };
+		DFF762F5168128210095E852 /* GTBLProductReservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTBLProductReservation.h; path = Classes/GTBLProductReservation.h; sourceTree = "<group>"; };
+		DFF762F6168128210095E852 /* GTBLProductReservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTBLProductReservation.m; path = Classes/GTBLProductReservation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,8 @@
 				DF199A361676C8A500C0BBEE /* URLImageCached.m */,
 				DF199A371676C8A500C0BBEE /* URLImageLoadOperation.h */,
 				DF199A381676C8A500C0BBEE /* URLImageLoadOperation.m */,
+				DF18F331167BF0F300797B01 /* UIColor-util.h */,
+				DF18F332167BF0F300797B01 /* UIColor-util.m */,
 			);
 			name = utilities;
 			path = Classes/utilities;
@@ -258,6 +266,8 @@
 				DF5F945C16715FE10047CC8C /* GTBLDataHelpers.m */,
 				DF5F9452167152640047CC8C /* GTBLProduct.h */,
 				DF5F9453167152640047CC8C /* GTBLProduct.m */,
+				DFF762F5168128210095E852 /* GTBLProductReservation.h */,
+				DFF762F6168128210095E852 /* GTBLProductReservation.m */,
 				DF5F9455167155790047CC8C /* GTBLServiceHandler.h */,
 				DF5F9456167155790047CC8C /* GTBLServiceHandler.m */,
 				DF5F944C1671352F0047CC8C /* GTBLStore.h */,
@@ -401,6 +411,8 @@
 				DF199A3A1676C8A500C0BBEE /* URLImageLoadOperation.m in Sources */,
 				DF199A711678137F00C0BBEE /* GTBLStoreListItem.m in Sources */,
 				DF199A7816781C0500C0BBEE /* StoreListViewController.m in Sources */,
+				DF18F333167BF0F300797B01 /* UIColor-util.m in Sources */,
+				DFF762F7168128210095E852 /* GTBLProductReservation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
