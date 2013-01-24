@@ -1,4 +1,4 @@
-disco
-=====
+Product browsing - iPhone App
+==========
 
-Mobile Getable App
+iOS Client for Getable public API
